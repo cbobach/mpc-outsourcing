@@ -1,0 +1,217 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+%
+\graphicspath{ {../data/plots/} }
+%
+\author{Christian Bobach, 20104256}
+\title{AMD tag overhead in a MPC outsourcing environment}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+%INTRODUCTION
+%papers, problem, solutions, introduction to experiments
+\section{Intorduction}
+In this paper I will be investigating the overhed of introducing the proposal for how to outsource computation in a muliparty computation environment from the paper \cite{fosc}. 
+
+
+%Detection of adversaries
+
+%EXPERIMENT
+%what have we covered
+%what is the hypothesises
+%what is the results
+\section{Experiment}
+
+
+%CONCLUTION
+\section{Conclution}
+
+
+%CONTINIUED WORK
+%proposals for further work
+\section{Continiued work}
+
+\pagebreak
+
+%BIB
+\bibliography{report}
+\bibliographystyle{alpha}
+
+\appendix
+
+\section{Data}
+
+
+\subsection{Preprocess}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{const_preprocess_plots}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{const_preprocess_avg}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{const_preprocess_frac}
+        \caption{}
+    \end{subfigure}
+
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{eval_preprocess_plots}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{eval_preprocess_avg}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{eval_preprocess_frac}
+        \caption{}
+    \end{subfigure}
+\end{figure}
+
+
+\subsection{Solder}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{const_solder_plots}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{const_solder_avg}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{const_solder_frac}
+        \caption{}
+    \end{subfigure}
+
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{eval_solder_plots}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{eval_solder_avg}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{eval_solder_frac}
+        \caption{}
+    \end{subfigure}
+\end{figure}
+
+\subsection{Prepare}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{const_prepare_plots}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{const_prepare_avg}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{const_prepare_frac}
+        \caption{}
+    \end{subfigure}
+
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{eval_prepare_plots}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{eval_prepare_avg}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{eval_prepare_frac}
+        \caption{}
+    \end{subfigure}
+\end{figure}
+
+\subsection{Evaluate}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{const_eval_plots}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{const_eval_avg}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{const_eval_frac}
+        \caption{}
+    \end{subfigure}
+
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{eval_eval_plots}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{eval_eval_avg}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{eval_eval_frac}
+        \caption{}
+    \end{subfigure}
+\end{figure}
+
+\subsection{Decode}
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{const_decode_plots}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{const_decode_avg}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{const_decode_frac}
+        \caption{}
+    \end{subfigure}
+
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{eval_decode_plots}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{eval_decode_avg}
+        \caption{}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.3\textwidth}
+        \includegraphics[width=\textwidth]{eval_decode_frac}
+        \caption{}
+    \end{subfigure}
+\end{figure}
+
+\end{document}

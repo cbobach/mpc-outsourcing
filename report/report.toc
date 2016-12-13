@@ -1,0 +1,11 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Intorduction}{3}{section.1}
+\contentsline {section}{\numberline {2}Experiment}{3}{section.2}
+\contentsline {section}{\numberline {3}Conclution}{3}{section.3}
+\contentsline {section}{\numberline {4}Continiued work}{3}{section.4}
+\contentsline {section}{\numberline {A}Data}{4}{appendix.A}
+\contentsline {subsection}{\numberline {A.1}Preprocess}{4}{subsection.A.1}
+\contentsline {subsection}{\numberline {A.2}Solder}{4}{subsection.A.2}
+\contentsline {subsection}{\numberline {A.3}Prepare}{5}{subsection.A.3}
+\contentsline {subsection}{\numberline {A.4}Evaluate}{5}{subsection.A.4}
+\contentsline {subsection}{\numberline {A.5}Decode}{5}{subsection.A.5}

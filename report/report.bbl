@@ -1,0 +1,9 @@
+\begin{thebibliography}{JNO16}
+
+\bibitem[JNO16]{fosc}
+Thomas~P. Jakobsen, Jesper~Buus Nielsen, and Claudio Orlandi.
+\newblock A framework for outsourcing of secure computation.
+\newblock Cryptology ePrint Archive, Report 2016/037, 2016.
+\newblock \url{http://eprint.iacr.org/2016/037}.
+
+\end{thebibliography}

@@ -10,16 +10,12 @@
 # sjaelend tilfaeledet i virkeliheden.
 
 echo "Running timing script for MPC-outsourcing:";
-echo "---! remember to run from base dir, not from inside timing !---"
 echo ""
 
 PORT=28001
-IS_RUNNING_ID=0
-ITERATION=0
 
 NUM_TAG=$1
 NUM_AES=$2
-ITERATIONS=$3
 
 function clean_up {
     if (( SIZE>0 ))
@@ -61,7 +57,6 @@ function clean_up {
 
 function restart {
     PORT=28001
-
 
     if (( SIZE>0 ))
     then
@@ -113,24 +108,18 @@ function singelthreaded {
 }
 
 function run {
-    IS_RUNNING_ID=0
-
-    echo "___ RUNNING CONSECUTIVE ___"
-
-    while (true)
+    while ((NUM_AES <= 100))
     do
-        while (( $ITERATION<$ITERATIONS ))
-        do
-            echo "___ ITERATION: $ITERATION < $ITERATIONS ___"
+        singelthreaded
 
-            singelthreaded
+        PORT=$(($PORT+1))
 
-            PORT=$(($PORT+1))
-            ITERATION=$(($ITERATION+1))
-        done
-
-        ITERATION=0
-        NUM_AES=$(($NUM_AES+1))
+        if ((NUM_AES == 100))
+        then
+          NUM_AES=0
+        else
+          NUM_AES=$(($NUM_AES+1))
+        fi
     done
 }
 

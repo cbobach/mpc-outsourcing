@@ -52,10 +52,11 @@ def calc_plots( in_file, out_file, col ):
         if 0 in plots[aes] and 1 in plots[aes]:
             tags_0 = plots[aes][0]
             tags_1 = plots[aes][1]
-            tag_avg = sum(tags_1)/len(tags_1) - sum(tags_0)/len(tags_0)
-            plots_avg[aes] = tag_avg
 
-        if sum(tags_0)/len(tags_0) != 0:
+        tag_avg = sum(tags_1)/len(tags_1) - sum(tags_0)/len(tags_0)
+        plots_avg[aes] = tag_avg
+
+        if sum(tags_1)/len(tags_1) != 0:
             tag_frac =  tag_avg / float( sum(tags_1)/len(tags_1) ) * 100
             plots_frac[aes] = tag_frac
 

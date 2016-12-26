@@ -127,6 +127,6 @@ set output "plots/const_decode_frac.png"
 plot "csv/const_decode_frac.csv" using 1:2 w lines t "avg tag/total"
 
 #TOTAL
-set title "Total time (%)"
+set title "Tag time - upper bound (%)"
 set output "plots/total_frac.png"
-plot [0:1000] [0:15] 300/(36*x+2250)*100 t "avg tag/total"
+plot [0:10000] 300/(36*x+22500)*100 t "avg tag/total"
